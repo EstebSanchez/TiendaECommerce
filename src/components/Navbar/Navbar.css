@@ -1,25 +1,41 @@
 nav{
-    display: inline-block;
-    width: 100%;
-    background-color:black;
-}
-nav ul {
     display: flex;
-    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(156, 189, 8);
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-#links a{
+nav h3 {
+  font-size: 20px;
+}
+nav ul {
+    justify-content: space-between;
+    list-style: none;
+    width: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-flex;
+}
+
+nav ul li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+nav ul a{
     color: white;
     text-decoration:none;
-    padding:12px;
-    border-radius:5px;
     font-size:1.3em;
     transition: all 0.1s ease-in-out;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
   }
 
-  #links a:hover{
-
-    border-bottom:5px solid white;
+nav ul a:hover{
+    border-bottom:3px solid white;
+    border-radius: 4px;
   }
