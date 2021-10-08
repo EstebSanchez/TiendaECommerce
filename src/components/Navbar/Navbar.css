@@ -1,23 +1,47 @@
+
 nav{
     display: flex;
-    width: 100%;
-    background-color: rgb(156, 189, 8);
-    padding-left: 3%;
-    padding-right: 3%;
-    min-height: 60px;
+    background-color: rgb(127, 153, 10);
+    padding-left: 4%;
+    padding-right: 4%;
+    min-height: 75px;
 }
 
-nav h3 {
-  font-size: 20px;
+nav div {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+nav div a img {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+}
+
+nav div a {
+  display: inline-block;
+  text-decoration:none;
+  max-height: 50px;
+  max-width: 200px;
+}
+
+nav div a h4{
+  display: inline-block;
+  color: black;
+  text-decoration:none;
+  font-size:1.3em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
 nav ul {
     justify-content: space-between;
     list-style: none;
     width: auto;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: auto;
     margin-bottom: auto;
     display: inline-flex;

@@ -2,3 +2,13 @@ div {
     display: block;
     margin: auto;
 }
+
+div a {
+    color: black;
+}
+
+div a span{
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+}

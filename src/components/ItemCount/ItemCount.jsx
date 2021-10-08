@@ -1,22 +1,14 @@
 import React, { useState } from 'react'
 import './ItemCount.css'
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock,amount,addAmount,removeAmount,buttons}) => {
 
-    const [clicks, setClicks] = useState(1)
-
-    const addClick = () => {
-        clicks >= 0 && clicks < stock && setClicks(clicks+1)
-    }
-
-    const removeClick = () => {
-        clicks > 0 && clicks <= stock && setClicks(clicks-1)
-    }
-
+    console.log(buttons)
+    
     return (
         <div className="counter">
-            <button onClick = {() => removeClick()} className="btn">-</button>
-            <div className="count">{clicks}</div>
-            <button onClick = {() => addClick()} className="btn">+</button>
+            <button disabled = {buttons} onClick = {() => removeAmount()} className="btn">-</button>
+            <div className="count">{amount}</div>
+            <button disabled = {buttons} onClick = {() => addAmount()} className="btn">+</button>
         </div>
     )
 }

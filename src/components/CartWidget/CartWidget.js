@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import './CartWidget.css'
 
-const CartWidget = ({items}) => {
+const CartWidget = ({cart}) => {
+
     return (
         <div>
-            <FontAwesomeIcon icon = {faCartPlus} /> {items}
+            <a href=""><FontAwesomeIcon 
+            icon = {faCartPlus} 
+            /> 
+            <span>{cart}</span>
+            </a>
         </div>
     )
 }
